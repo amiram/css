@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-size: 30px;
+            }
+            a.highlight:link {
+                color: #888888;
+            }
+
+            a:visited {
+                color: #222111;
+            }
+
+            button {
+                background-color: #0088ff;
+                border: 0;
+                width: 100px;
+                line-height: 20px;
+            }
+
+            button:hover {
+                background-color: #00bbff;
+            }
+
+            p {
+                visibility: hidden;
+            }
+
+            div:hover p {
+                visibility: visible
+            }
+
+            tr:nth-child(even) {
+                background: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            link, visited, hover, active
+                <a href="http://google.com">Google default</a><br>
+                <a class="highlight" href="http://google.com">Google highlight</a>
+        </div>
+        
+        <div>
+            <button>Click Here!</button>
+            <p>this is a tooltip for the button</p>
+        </div>
+        
+        change color of any row on hover, light color table
+        <table>
+            <thead>
+                <tr>
+                    <th>First name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Moshe (light color)</td>
+                    <td>Cohen</td>
+                </tr>
+                <tr>
+                    <td>Yosef (dark color)</td>
+                    <td>Levi</td>
+                </tr>
+            </tbody>
+        </table>
+
+        dark color table
+        <table>
+            <thead>
+                <tr>
+                    <th>First name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Moshe (light color)</td>
+                    <td>Cohen</td>
+                </tr>
+                <tr>
+                    <td>Yosef (dark color)</td>
+                    <td>Levi</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
